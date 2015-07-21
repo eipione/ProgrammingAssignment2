@@ -30,7 +30,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Computes the inverse of the matrix given the R object created by the makeCacheMatrix function
-## The actual computation is done on the first call(with a particular object), 
+## The actual computation is done on the first call(for a particular object), 
 ## the subsequent calls return the cached value
 cacheSolve <- function(x, ...) {
     inv <- x$getInv()
